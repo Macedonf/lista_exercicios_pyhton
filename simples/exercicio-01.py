@@ -7,6 +7,6 @@ PI=3.14
 #PROCESSAMENTO
 area = (PI*(raio*raio))
 
-#SAIDA
+#SAÍDA
 print(" Area do circulo " , area)
 

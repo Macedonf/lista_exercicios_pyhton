@@ -5,15 +5,7 @@ valor1= float (input("Qual o primeiro valor?"))
 valor2= float (input("Qual o segundo valor?"))
 
 #processamento
-resposta = 0
-
-if valor1 > valor2:
-     resposta = int(valor1)
-
-else:
-     resposta = int(valor2)
-
+resposta = valor1 if valor1 > valor2 else valor2
 
 #saida
 print("O maior deles: ", resposta)
-

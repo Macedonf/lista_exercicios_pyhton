@@ -4,11 +4,11 @@
 valor = int (input("escreva um valor:"))
 
 #Processamento
-Resposta = ""
+resposta = ""
 if valor >= 0 : 
-    Resposta = "positivo"
+    resposta = "positivo"
 else:
-     Resposta = "negativo"
+     resposta = "negativo"
 
       #saidas
-print (" o valor é", Resposta)
+print (" o valor é", resposta)

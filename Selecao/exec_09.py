@@ -6,7 +6,7 @@ numeromaca = int (input("Olá, quantas maças deseja comprar?"))
 macamenosduzia = float (0.30)
 macaduzia = float (0.25)
 #Processamento
-if int (numeromaca >= 6):
+if int (numeromaca >= 12):
     resposta = float (macaduzia * numeromaca)
 
 else: resposta = float (macamenosduzia * numeromaca)    

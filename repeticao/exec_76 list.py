@@ -9,24 +9,33 @@
 #OBS02: Faça com que o sistema sorteie 6 valores digitados pelo usuário logo após o exibir as mensagens.
 #  ( para escolher um número aleatório usar o comando  "random.randrange")
 
-maiorValor = 0
-menorValor = 999999
-media = 0
-limite = 50
+maior = 0
+menor = 999999
+soma = 0
+limite = 5
+listValores = []
 
 for x in range (1,limite + 1):
     valor = int (input(f"Qual o {x} º valor?"))
-    if( valor > maiorValor):
-        maiorValor = valor
-    
-    if(valor < menorValor):
-        menorValor = valor
+    if( valor > maior):
+        maior = valor
+    if(valor < menor):
+        menor = valor
 
-    media = media +  maiorValor
-    print("Soma:", media)
-    
-print ("Maior:", maiorValor)
+    soma = soma +  maior
+    print ("Soma:", soma)
+    listValores.append (valor)
 
-print ("Menor:", menorValor)
+print ("Maior:", maior)
 
-print ("a média dos números lidos é", media / limite )
+print ("Menor:", menor)
+
+print ("Média", soma / limite )
+
+print ("Valores:", listValores)
+
+for x in listValores:
+    if (x % 2 ==0):
+        print("item:" , x)
+
+
